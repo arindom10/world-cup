@@ -3,6 +3,8 @@ body{
     background: #FFFFFF;
     font-family: 'Lora', serif;
 font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
 }
 /* Main banner  */
 .container{
@@ -118,3 +120,142 @@ hr{
     color: #FFFFFF;
     font-size: 30px;
 }
+.viewAllButton{
+    display: none;
+}
+
+
+@media only screen and (min-width:460px) and (max-width:900px){
+    /* Main banner  */
+    .nav-and-card{
+        margin: 50px 5% 0;
+        gap: 30px;
+        display: block;
+    }
+    /* nav-and-card */
+    .shedule{
+        display: flex;
+        background-color: #161616;
+        align-items: center;
+        justify-content: space-around;  
+        border-radius: 15px; 
+        height: 100%;
+        padding: 20px;
+        flex-direction: row;
+        width:90%;
+        margin-bottom: 20px;
+    }
+    .shedule-button{
+        position: inherit;
+    }
+    .card-container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .card{
+        width:100%
+    }
+    /* view all button  */
+    .viewAllSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .viewAllButton{
+        height: 40px;
+        width: 200px;
+        background-color: red;
+        border-radius: 20px;
+        border-color: transparent;
+        display: block;
+    }
+    /* footer for the tablet */
+    .footer{
+        margin-top: 10px;
+    }
+    .footer-terms{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        margin-top: 40px;
+    
+    }
+    }
+    @media only screen and (max-width:460px) {
+        /* main banner for the website */
+
+        .container{
+            background-color: #161616;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 30px;
+            margin: 20px 1% 0;
+        }
+        .heding-banner p{
+            white-space: nowrap; 
+            width: 300px; 
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            border: 1px solid #000000;
+        }
+        .short-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        /* nav and card  */
+    .nav-and-card{
+        margin: 50px 5% 0;
+        gap: 30px;
+        display: block;
+    }
+    /* shedule match news */
+    .shedule{
+        display: flex;
+        background-color: #161616;
+        align-items: center;
+        justify-content: space-around;  
+        border-radius: 15px; 
+        height: 100%;
+        padding: 10px;
+        flex-direction: row;
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .shedule button{
+        width: 100%;
+    }
+    .shedule-button{
+        position: inherit;
+    }
+    .card-container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .card{
+        width:100%
+    }
+    /* view all button */
+    .viewAllButton{
+        display: none;
+    }
+    /* fotter for the mobile */
+    .footer{
+        height: auto;
+    }
+    .footer-terms{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    }
