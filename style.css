@@ -203,7 +203,6 @@ hr{
             width: 300px; 
             overflow: hidden;
             text-overflow: ellipsis; 
-            border: 1px solid #000000;
         }
         .short-text {
             white-space: nowrap;
